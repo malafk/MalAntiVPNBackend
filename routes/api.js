@@ -29,8 +29,6 @@ router.get('/check/:ip', async(req,res) => {
 
     let json = JSON.parse(body);
 
-    console.log(json)
-
     let as = json.org.split(' ')[0]
 
     console.log("as: " + as)
